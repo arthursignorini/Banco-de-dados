@@ -1,63 +1,94 @@
-1) Um sistema de banco de dados (SBD) consiste em um conjunto de dados relacionados, juntamente com a sua estrutura de organização e os mecanismos que possibilitam seu acesso. Ele é composto por três elementos principais:
-   - **Banco de dados**: coleção organizada de dados.
-   - **Modelo de dados**: estrutura lógica que define como os dados são organizados e relacionados.
-   - **Sistema Gerenciador de Banco de Dados (SGBD)**: software que permite o armazenamento, recuperação e manipulação dos dados por usuários e aplicações.
+1) Um sistema de banco de dados (SBD) consiste em um conjunto de dados relacionados, juntamente com a sua estrutura de organização e os mecanismos que possibilitam seu acesso. Ele é composto por três elementos principais:  
+   - Banco de dados: coleção organizada de dados.  
+   - Modelo de dados: estrutura lógica que define como os dados são organizados e relacionados.  
+   - Sistema Gerenciador de Banco de Dados (SGBD): software que permite o armazenamento, recuperação e manipulação dos dados por usuários e aplicações.  
 
-2) Um SBD é composto por:
-   - **Dados**: conjunto de informações organizadas.
-   - **Hardware**: infraestrutura física para armazenamento e processamento.
-   - **Software**: SGBD e ferramentas auxiliares.
-   - **Usuários**: administradores, desenvolvedores e usuários finais.
-   - **Procedimentos**: regras e metodologias de acesso e manipulação.
+2) Um SBD é composto por:  
+   - Dados: conjunto de informações organizadas.  
+   - Hardware: infraestrutura física para armazenamento e processamento.  
+   - Software: SGBD e ferramentas auxiliares.  
+   - Usuários: administradores, desenvolvedores e usuários finais.  
+   - Procedimentos: regras e metodologias de acesso e manipulação.  
 
-3) Usuários e aplicações interagem com o sistema por meio de consultas. Essas consultas são interpretadas pelo SGBD, que executa otimizações para garantir a eficiência da operação. O próprio sistema identifica os dados necessários para responder às consultas e os recupera dos repositórios sob seu controle.
+3) Usuários e aplicações interagem com o sistema por meio de consultas. Essas consultas são interpretadas pelo SGBD, que executa otimizações para garantir a eficiência da operação. O próprio sistema identifica os dados necessários para responder às consultas e os recupera dos repositórios sob seu controle.  
 
-4) Um banco de dados é uma coleção organizada de dados que atende às necessidades específicas de usuários e organizações. Ele está presente em diversos setores, como saúde, finanças e comércio. Exemplo de banco de dados: [link para encontrá-lo].
+4) Um banco de dados é uma coleção organizada de dados que atende às necessidades específicas de usuários e organizações. Ele está presente em diversos setores, como saúde, finanças e comércio. Exemplo de banco de dados: Transfermarkt – Banco de dados sobre transferências, estatísticas de jogadores e clubes. Link: https://www.transfermarkt.com
 
-5) As principais propriedades de um banco de dados são:
-   - **Finalidade**: criado para atender a um propósito específico.
-   - **Realidade**: representa um conjunto de informações do mundo real.
-   - **Minimundo**: abstração de um contexto específico (universo de discurso).
-   - **Coerência**: mantém a consistência lógica dos dados armazenados.
-   - **Compartilhamento**: permite o acesso simultâneo por múltiplos usuários.
+5) As principais propriedades de um banco de dados são:  
+   - Finalidade: criado para atender a um propósito específico.  
+   - Realidade: representa um conjunto de informações do mundo real.  
+   - Minimundo: abstração de um contexto específico (universo de discurso).  
+   - Coerência: mantém a consistência lógica dos dados armazenados.  
+   - Compartilhamento: permite o acesso simultâneo por múltiplos usuários.  
 
-6) O desenvolvimento de um banco de dados segue diversas etapas estruturadas:
-   1. **Especificação**: definição do minimundo que será modelado.
-   2. **Análise de Requisitos**: levantamento de restrições e regras de operação.
-   3. **Projeto Conceitual**: modelagem dos dados em um nível abstrato, geralmente usando diagramas como o Modelo Entidade-Relacionamento.
-   4. **Projeto Lógico**: transformação do modelo conceitual em um esquema lógico compatível com um SGBD específico.
-   5. **Projeto Físico**: definição da estrutura física de armazenamento e otimizações para desempenho.
+6) O desenvolvimento de um banco de dados segue diversas etapas estruturadas:  
+   1. Especificação: definição do minimundo que será modelado.  
+   2. Análise de Requisitos: levantamento de restrições e regras de operação.  
+   3. Projeto Conceitual: modelagem dos dados em um nível abstrato, geralmente usando diagramas como o Modelo Entidade-Relacionamento.  
+   4. Projeto Lógico: transformação do modelo conceitual em um esquema lógico compatível com um SGBD específico.  
+   5. Projeto Físico: definição da estrutura física de armazenamento e otimizações para desempenho.  
 
-7) Um Sistema Gerenciador de Banco de Dados (SGBD) é um conjunto de programas que permite criar e gerenciar bancos de dados. Suas principais funções são:
-   - **Definir**: especificar os tipos de dados, estruturas e restrições no catálogo do sistema.
-   - **Construir**: armazenar e organizar os dados de forma eficiente.
-   - **Manipular**: possibilitar a inserção, remoção, modificação e recuperação de dados.
-   - **Compartilhar**: permitir o acesso simultâneo a múltiplos usuários com controle de concorrência.
+7) Um Sistema Gerenciador de Banco de Dados (SGBD) é um conjunto de programas que permite criar e gerenciar bancos de dados. Suas principais funções são:  
+   - Definir: especificar os tipos de dados, estruturas e restrições no catálogo do sistema.  
+   - Construir: armazenar e organizar os dados de forma eficiente.  
+   - Manipular: possibilitar a inserção, remoção, modificação e recuperação de dados.  
+   - Compartilhar: permitir o acesso simultâneo a múltiplos usuários com controle de concorrência.  
 
-8) As principais propriedades de um SGBD incluem:
-   - **Flexibilidade**: adapta-se a diferentes aplicações e necessidades.
-   - **Múltiplas interfaces**: oferece diversas formas de interação (SQL, APIs, interfaces gráficas).
-   - **Economia de escala**: otimiza o uso de recursos computacionais.
-   - **Garantia de padrões**: assegura integridade e conformidade com normas.
-   - **Restrições de acesso**: protege dados contra acessos não autorizados.
-   - **Backup e recuperação**: mecanismos para proteção contra falhas.
-   - **Alta disponibilidade**: garante acesso contínuo aos dados.
-   - **Restrições de integridade**: assegura consistência e validade dos dados.
-   - **Relacionamentos complexos**: permite modelagem avançada de dados interligados.
-   - **Redução do tempo de desenvolvimento**: facilita a criação e manutenção de aplicações.
+8) As principais propriedades de um SGBD incluem:  
+   - Flexibilidade: adapta-se a diferentes aplicações e necessidades.  
+   - Múltiplas interfaces: oferece diversas formas de interação (SQL, APIs, interfaces gráficas).  
+   - Economia de escala: otimiza o uso de recursos computacionais.  
+   - Garantia de padrões: assegura integridade e conformidade com normas.  
+   - Restrições de acesso: protege dados contra acessos não autorizados.  
+   - Backup e recuperação: mecanismos para proteção contra falhas.  
+   - Alta disponibilidade: garante acesso contínuo aos dados.  
+   - Restrições de integridade: assegura consistência e validade dos dados.  
+   - Relacionamentos complexos: permite modelagem avançada de dados interligados.  
+   - Redução do tempo de desenvolvimento: facilita a criação e manutenção de aplicações.  
 
-9) O uso de bancos de dados pode ser inadequado em aplicações muito simples, onde a complexidade de um SGBD não se justifica. Nessas situações, arquivos simples ou soluções alternativas podem ser mais eficientes.
+9) O uso de bancos de dados pode ser inadequado em aplicações muito simples, onde a complexidade de um SGBD não se justifica. Nessas situações, arquivos simples ou soluções alternativas podem ser mais eficientes.  
 
-10) Um modelo de dados define a estrutura lógica de armazenamento, organização e manipulação dos dados. Ele inclui:
-   - **Conceitos estruturais**: descrevem como os dados são organizados.
-   - **Operações associadas**: especificam como os dados podem ser manipulados (inserção, remoção, atualização, recuperação).
-   - **Regras de integridade**: garantem a consistência e validade dos dados.
-   - **Exemplo**: um modelo de dados pode permitir operações como inserir, remover, modificar ou recuperar informações.
+10) Um modelo de dados define a estrutura lógica de armazenamento, organização e manipulação dos dados. Ele inclui:  
+   - Conceitos estruturais: descrevem como os dados são organizados.  
+   - Operações associadas: especificam como os dados podem ser manipulados (inserção, remoção, atualização, recuperação).  
+   - Regras de integridade: garantem a consistência e validade dos dados.  
+   - Exemplo: um modelo de dados pode permitir operações como inserir, remover, modificar ou recuperar informações.  
 
-11) Em relação ao nível de abstração, os modelos de dados se classificam em:
-   - **Modelo Conceitual**: descreve os dados em um nível alto, sem detalhes técnicos.
-   - **Modelo Lógico**: traduz o modelo conceitual para um formato mais estruturado, considerando a implementação em um SGBD específico.
-   - **Modelo Físico**: detalha como os dados são armazenados e acessados no hardware.
+11) Em relação ao nível de abstração, os modelos de dados se classificam em:  
+   - Modelo Conceitual: descreve os dados em um nível alto, sem detalhes técnicos.  
+   - Modelo Lógico: traduz o modelo conceitual para um formato mais estruturado, considerando a implementação em um SGBD específico.  
+   - Modelo Físico: detalha como os dados são armazenados e acessados no hardware.  
 
 12) O esquema de banco de dados é a estrutura que define a organização dos dados dentro do sistema. Ele inclui a definição de tabelas, colunas, tipos de dados, chaves primárias e estrangeiras, além de regras de integridade e relacionamentos. O esquema é projetado para ser relativamente estável ao longo do tempo, enquanto os dados armazenados nele podem sofrer constantes modificações.
 
+13) Instância de Banco de Dados (BD) refere-se ao conjunto de dados armazenados em um determinado momento. Ela representa o estado atual do banco de dados, que pode mudar dinamicamente conforme as operações de inserção, exclusão e atualização são realizadas.  
+
+14) Arquitetura de Três Esquemas é um modelo que separa a visão do usuário da estrutura interna do banco de dados. Seus principais benefícios incluem:  
+   - Autodescrição dos dados, permitindo melhor organização e manutenção.  
+   - Suporte a múltiplas visões para diferentes grupos de usuários.  
+   - Independência entre a aplicação e a estrutura física do banco.  
+
+15) Níveis da Arquitetura de Três Esquemas:  
+   - Nível Externo:  
+     - Define esquemas externos (visões individuais para diferentes usuários ou aplicações).  
+     - Permite personalização e segurança ao restringir acesso a partes específicas do banco.  
+   - Nível Conceitual:  
+     - Contém o esquema conceitual, que descreve entidades, relacionamentos, restrições e operações gerais.  
+     - Oculta detalhes físicos do armazenamento, focando na estrutura lógica dos dados.  
+   - Nível Interno:  
+     - Define o esquema físico, especificando como os dados são armazenados e acessados no hardware.  
+     - Inclui detalhes sobre índices, alocação de espaço e métodos de acesso.  
+
+16) Mapeamento de Esquemas é o processo de conversão de requisições e resultados entre os diferentes níveis da arquitetura, garantindo consistência e transparência para os usuários.  
+
+17) Independência de Dados é a capacidade de modificar o esquema de um nível sem impactar diretamente os esquemas dos níveis adjacentes.  
+   - Independência Lógica de Dados: Permite alterações no esquema conceitual sem afetar os esquemas externos.  
+   - Independência Física de Dados: Permite modificações na estrutura de armazenamento sem alterar o esquema conceitual.  
+
+18) Linguagem de Consulta refere-se a um conjunto de operações utilizadas para recuperar e manipular dados armazenados no banco. Essas linguagens permitem que os usuários obtenham informações de forma estruturada, geralmente por meio de comandos específicos.  
+
+19) Linguagens utilizadas em SQL:  
+   - VDL (View Definition Language): Define visões personalizadas do banco de dados.  
+   - DDL (Data Definition Language): Define a estrutura do banco de dados (criação de tabelas, índices, etc.).  
+   - SDL (Storage Definition Language): Especifica detalhes físicos de armazenamento dos dados.  
+   - DML (Data Manipulation Language): Permite operações como inserção, exclusão, modificação e recuperação de dados.
